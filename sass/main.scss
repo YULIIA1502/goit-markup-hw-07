@@ -1,5 +1,32 @@
+@import"./utils/vars";
+@import"./utils/mixin";
+
+@import"./base/reset";
+@import"./base/body";
+
+@import"./utils/hidden";
+@import"./components/conteiner";
+
+@import "./components/logo";
+@import "./components/header";
+
+@import "./layout/hero";
+@import "./layout/after-hero";
+@import "./layout/work";
+@import "./layout/team";
+
+@import "./components/social-link";
+
+@import "./layout/client";
+
+@import "./components/footer";
+
+@import "./layout/portfolio";
+
+@import "./components/modal"
 
 
 
-@import "./logo";
-@import "./header";
+
+
+

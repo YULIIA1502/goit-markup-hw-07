@@ -1,0 +1,119 @@
+.footer{   
+    background: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__conteiner{
+    display: flex;
+    align-items:baseline;
+}
+
+.footer__contacts{
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer__items:not(:first-child){
+    margin-top: 9px;
+}
+
+.footer__address{
+    @include text (14px, 1.71, null, 0.03em);
+    color: var(--light-header-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color:var(--active-color);
+    }
+}
+
+.footer__mail, .footer__tel{
+    display: block;
+    @include text (14px, 1.71, null, 0.03em);
+    color: var(--footer-address-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+        color:var(--active-color);
+    }
+}
+
+.footer__slogan{
+    margin-left: 70px;
+}
+
+.slogan__title {
+    @include text (16px, 1.14, 700, 0.03em);
+    text-transform: uppercase;
+    color:var(--logo-light-color);
+}
+
+.slogan__list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer__form{
+    margin-left: auto;
+}
+
+.signature__form{
+    display: flex;
+    margin-top: 20px;
+}
+
+.signature__title{
+    @include text (14px, 1.14, 700, 0.03em);
+    text-transform: uppercase;
+    color:var(--logo-light-color);
+}
+
+.signature__input{
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    color:#FFFFFF;
+    background-color: var(--footer-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        border-color: var(--active-color);
+}
+}
+
+
+.signature__btn{
+    position: relative;
+    display: flex;
+    align-items:center;
+    width: 200px;
+    font-family: inherit;
+    @include text (16px, 1.87, 700, 0.06em);
+    color: var(--btn-text-active-color);
+   
+    background: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    padding: 0;
+    padding-left: 28px;
+    cursor: pointer;
+}
+
+
+.signature__icon{
+    position: absolute;
+    left: 148px;
+    top: 13px;
+    fill: currentColor;
+}
